@@ -1,0 +1,16 @@
+// Case
+
+.c-case p {
+  line-height: 2;
+}
+
+
+// Details
+
+.c-case-details__list {
+  margin-bottom: 1rem;
+
+  @include mq(medium-up) {
+    margin-bottom: 2rem;
+  }
+}

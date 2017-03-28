@@ -1,0 +1,27 @@
+<div class="c-hero">
+  <div class="c-hero__logo">
+    <div class="c-logo">
+      <img src="/images/logo.png">
+      <div class="c-logo__animated"></div>
+    </div>
+  </div>
+  <h1 class="c-hero__heading">
+    <span class="c-hero__heading-name">Lorem ipsum dolr </span>
+    <span class="c-hero__heading-title">Sit amet consec tetur adipsc.</span>
+  </h1>
+  <div class="c-hero__art">
+    <img src="/images/bobby.png" class="c-hero__bobby">
+    <div class="c-hero__frame"></div>
+  </div>
+  <div class="c-hero__border"></div>
+  <div class="c-hero__lines">
+    <% 5.times do |num| %>
+      <div class="c-hero__line"></div>
+    <% end %>
+  </div>
+  <%= partial "partials/social_links" %>
+</div>
+
+<% content_for :page_scripts do %>
+  <%= javascript_include_tag 'home' %>
+<% end %>

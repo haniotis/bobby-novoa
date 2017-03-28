@@ -1,0 +1,18 @@
+{
+  "name": "Bobby Novoa portfolio website",
+  "version": "1.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "packery": "~2.1.1"
+  },
+  "devDependencies": {
+    "fastclick": "~1.0.6"
+  }
+}

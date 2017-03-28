@@ -1,0 +1,214 @@
+// Base
+
+.c-hero {
+  background-color: $off-white;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 2em;
+
+  @include mq(small-up) {
+    padding-top: 4em;
+  }
+}
+
+
+// Border
+
+.c-hero__border {
+  position: absolute;
+  z-index: 1; // Position border above lines
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  @include mq(small-up) {
+    box-shadow: inset 0px 0px 0px 16px $white;
+  }
+
+  @include mq(medium-up) {
+    box-shadow: inset 0px 0px 0px 24px $white;
+  }
+
+  @include mq(large-up) {
+    box-shadow: inset 0px 0px 0px 32px $white;
+  }
+
+  @include mq(x-large-up) {
+    box-shadow: inset 0px 0px 0px 40px $white;
+  }
+}
+
+
+// Logo
+
+.c-hero__logo {
+  position: absolute;
+  top: 4em;
+  right: 4em;
+
+  @include mq(medium-down) {
+    display: none;
+  }
+}
+
+
+// Content
+
+.c-hero__heading {
+  position: relative;
+  z-index: 3;
+  font-size: 40px;
+  line-height: 1.1;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: $secondary-color;
+
+  @include mq(small-up) {
+    font-size: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include mq(medium-down) {
+    text-align: center;
+  }
+
+  @include mq(medium-up) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    max-width: 47%;
+    font-size: 56px;
+  }
+
+  @include mq(large-up) {
+    font-size: 64px;
+    left: percentage(1/6);
+    padding-left: 0;
+    max-width: 40%;
+  }
+
+  @include mq(x-large-up) {
+    font-size: 72px;
+  }
+}
+
+.c-hero__heading-title {
+  color: $primary-color;
+}
+
+
+// Art
+
+.c-hero__art {
+  position: relative;
+  height: 300px;
+  z-index: 2;
+  margin-top: -20px;
+
+  @include mq(medium-up) {
+    position: absolute;
+    top: 50%;
+    left: percentage(2/6);
+    width: percentage(3/6);
+    height: 480px;
+    transform: translateY(-50%);
+  }
+}
+
+.c-hero__bobby {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
+  height: 410px;
+  max-width: none;
+  z-index: 2;
+
+  @include mq(small-up) {
+    height: 600px;
+  }
+
+  @include mq(medium-up) {
+    height: 720px;
+    margin-top: -12%;
+    right: -22%;
+    left: auto;
+  }
+
+  @include mq(large-up) {
+    right: -18%;
+    height: 780px;
+  }
+
+  @include mq(x-large-up) {
+    right: -12%;
+    height: 840px;
+  }
+}
+
+
+// Frame
+
+.c-hero__frame {
+  position: absolute;
+  height: 280px;
+  top: 20%;
+  left: 6%;
+  right: 6%;
+  border: 24px solid transparent;
+  border-image: linear-gradient(45deg, $light-pink 0%, $light-purple 100%);
+  border-image-slice: 1;
+
+  @include mq(small-up) {
+    left: 10%;
+    right: 10%;
+    height: 400px;
+  }
+
+  @include mq(medium-up) {
+    border-width: 32px;
+    left: -140px;
+    top: 0;
+    right: 0;
+    height: 470px;
+  }
+
+  @include mq(large-up) {
+    left: 0;
+    border-width: 40px;
+  }
+
+  @include mq(x-large-up) {
+    height: 640px;
+  }
+}
+
+
+// Background lines
+
+.c-hero__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: $border-color;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      left: ($i*(percentage(1/4)));
+    }
+
+    @include mq(large-up) {
+      &:nth-child(#{$i}) {
+        left: ($i*(percentage(1/6)));
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.c-social-links {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3rem;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+
+  @include mq(large-up) {
+    left: 4.5rem;
+  }
+
+  @include mq(x-large-up) {
+    left: 6rem;
+  }
+
+  @include mq(medium-down) {
+    display: none;
+  }
+}
+
+.c-social-links__item {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  & + & {
+    margin-top: 1.5em;
+
+    @include mq(large-up) {
+      margin-top: 2em;
+    }
+  }
+}
+
+.c-social-links__icon {
+  vertical-align: top;
+  fill: $primary-color;
+  transition: fill $animation-time $animation-curve;
+
+  .c-social-links__item:hover & {
+    fill: $secondary-color;
+  }
+}

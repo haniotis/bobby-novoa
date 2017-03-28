@@ -1,0 +1,9 @@
+main_menu:
+- title: Intro
+  href: "/"
+- title: Work
+  href: "/work"
+- title: Profile
+  href: "/profile"
+- title: Contact
+  href: "/contact"
