@@ -7,22 +7,6 @@ module.exports = {
       'babel-polyfill',
       './source/scripts/main.js'
     ],
-    'projects': [
-      'babel-polyfill',
-      './source/scripts/pages/projects.js'
-    ],
-    home: [
-      'babel-polyfill',
-      './source/scripts/pages/home.js'
-    ],
-    about: [
-      'babel-polyfill',
-      './source/scripts/pages/about.js'
-    ],
-    utils: [
-      'babel-polyfill',
-      './source/scripts/utils.js'
-    ],
     vendor: [
       'jquery'
     ]
