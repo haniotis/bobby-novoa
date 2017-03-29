@@ -79,7 +79,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 5%;
+    left: 7.5%;
     max-width: 47%;
     font-size: 56px;
   }
@@ -143,12 +143,12 @@
 
   @include mq(large-up) {
     right: -18%;
-    height: 780px;
+    height: 760px;
   }
 
   @include mq(x-large-up) {
-    right: -12%;
-    height: 840px;
+    right: -9%;
+    height: 860px;
   }
 }
 
@@ -186,6 +186,7 @@
 
   @include mq(x-large-up) {
     height: 640px;
+    top: -20px;
   }
 }
 
