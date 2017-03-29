@@ -28,18 +28,50 @@
 .c-social-links__item {
   display: inline-block;
   position: relative;
-  padding: 1em;
+  width: 44px;
+  height: 44px;
 
   & + & {
-    margin-top: 0.25em;
+    margin-top: 1em;
 
     @include mq(large-up) {
-      margin-top: 0.5em;
+      margin-top: 1.5em;
     }
   }
 }
 
+.c-social-links__ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  transform: rotate(-90deg);
+
+  circle {
+    fill: none;
+    stroke: $purple;
+    stroke-width: 1.5;
+    stroke-dasharray: 128; // Circle perimeter
+    stroke-dashoffset: 128;
+    transition: stroke-dashoffset $animation-time $animation-curve, stroke $animation-time $animation-curve, opacity $animation-time $animation-curve;
+  }
+}
+
+.c-social-links__item:hover .c-social-links__ring circle {
+  stroke-dashoffset: 0;
+  stroke: $secondary-color;
+}
+
+
+// Icon
+
 .c-social-links__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
   fill: $primary-color;
   transition: fill $animation-time $animation-curve;
 

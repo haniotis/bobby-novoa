@@ -190,6 +190,12 @@
     right: -9%;
     height: 860px;
   }
+
+  @include mq(xx-large-up) {
+    right: -3%;
+    height: 1040px;
+    margin-top: -14%;
+  }
 }
 
 
