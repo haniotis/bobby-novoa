@@ -24,5 +24,12 @@ $x-large: 1600px;
 
 // Timing
 
-$animation-time: 0.3s;
-$animation-curve: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-time: 0.4s;
+$animation-curve: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
+
+// Transition delays
+
+$border-delay: 1.5s;
+$logo-delay: 2s;
+$headline-delay: 2.25s;

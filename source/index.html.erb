@@ -6,8 +6,12 @@
     </div>
   </div>
   <h1 class="c-hero__heading">
-    <span class="c-hero__heading-name">Lorem ipsum dolr </span>
-    <span class="c-hero__heading-title">Sit amet consec tetur adipsc.</span>
+    <div class="c-hero__heading-wrap">
+      <span class="c-hero__heading-name">Lorem ipsum dolr </span>
+    </div>
+    <div class="c-hero__heading-wrap">
+      <span class="c-hero__heading-title">Sit amet consec tetur adipsc.</span>
+    </div>
   </h1>
   <div class="c-hero__art">
     <img src="/images/bobby.png" class="c-hero__bobby">
@@ -21,7 +25,3 @@
   </div>
   <%= partial "partials/social_links" %>
 </div>
-
-<% content_for :page_scripts do %>
-  <%= javascript_include_tag 'home' %>
-<% end %>
