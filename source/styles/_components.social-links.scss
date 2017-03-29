@@ -3,9 +3,14 @@
   top: 50%;
   transform: translateY(-50%);
   left: 3rem;
-  width: 24px;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity $animation-time $social-delay $animation-curve;
+
+  .is-loaded & {
+    opacity: 1;
+  }
 
   @include mq(large-up) {
     left: 4.5rem;
@@ -21,22 +26,20 @@
 }
 
 .c-social-links__item {
-  display: block;
+  display: inline-block;
   position: relative;
-  width: 24px;
-  height: 24px;
+  padding: 1em;
 
   & + & {
-    margin-top: 1.25em;
+    margin-top: 0.25em;
 
     @include mq(large-up) {
-      margin-top: 1.5em;
+      margin-top: 0.5em;
     }
   }
 }
 
 .c-social-links__icon {
-  vertical-align: top;
   fill: $primary-color;
   transition: fill $animation-time $animation-curve;
 
