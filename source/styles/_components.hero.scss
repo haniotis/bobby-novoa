@@ -252,7 +252,7 @@
   background-color: mix($border-color, $black, 98%);
   transform: scaleY(0);
   transform-origin: top center;
-  transition: transform $animation-time*3 $animation-curve;
+  transition: transform $animation-time*3 $lines-delay $animation-curve;
 
   .is-loaded & {
     transform: none;
