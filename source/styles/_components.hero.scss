@@ -76,7 +76,7 @@
   flex-direction: column;
   z-index: 3;
   font-size: 40px;
-  line-height: 1.1;
+  line-height: 1.25;
   padding-left: 24px;
   padding-right: 24px;
   color: $secondary-color;
@@ -127,6 +127,7 @@
 
 .c-hero__heading-title {
   color: $primary-color;
+  font-family: $serif-bold-font-family;
   transition-delay: $headline-delay + 0.1s;
 }
 

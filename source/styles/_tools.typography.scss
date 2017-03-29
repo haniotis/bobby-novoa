@@ -12,3 +12,26 @@
     }
   }
 }
+
+// Body font
+
+@font-face {
+  font-family: "Sectra Book";
+  src: url("../fonts/GT-Sectra-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sectra Medium";
+  src: url("../fonts/GT-Sectra-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "America";
+  src: url("../fonts/GT-America-Compressed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

@@ -2,7 +2,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 3rem;
+  left: 2rem;
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -13,11 +13,11 @@
   }
 
   @include mq(large-up) {
-    left: 4.5rem;
+    left: 3.5rem;
   }
 
   @include mq(x-large-up) {
-    left: 6rem;
+    left: 4.5rem;
   }
 
   @include mq(medium-down) {
