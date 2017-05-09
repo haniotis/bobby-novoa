@@ -1,14 +1,14 @@
 @keyframes logo-sprite {
   100% {
-    background-position: 0 -633px;
+    background-position: 0 -695px;
   }
 }
 
 .c-logo {
-  width: 100px;
-  height: 34px;
+  width: 110px;
+  height: 38px;
   background-position-y: -12px;
-  background-size: 100px 621px;
+  background-size: 110px 683px;
   background-image: url('/images/logo-sprite.png');
 
   &:hover {
