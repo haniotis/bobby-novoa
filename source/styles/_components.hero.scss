@@ -139,6 +139,7 @@
   height: 300px;
   z-index: 2;
   margin-top: -20px;
+  pointer-events: none;
 
   @include mq(medium-up) {
     position: absolute;
