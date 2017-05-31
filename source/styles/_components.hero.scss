@@ -75,14 +75,14 @@
   display: flex; // Get rid of gap between titles
   flex-direction: column;
   z-index: 3;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.25;
   padding-left: 24px;
   padding-right: 24px;
   color: $secondary-color;
 
   @include mq(small-up) {
-    font-size: 48px;
+    font-size: 40px;
     padding-left: 48px;
     padding-right: 48px;
   }
@@ -97,23 +97,19 @@
     transform: translateY(-50%);
     left: 7.5%;
     max-width: 47%;
-    font-size: 56px;
+    font-size: 48px;
   }
 
   @include mq(large-up) {
-    font-size: 64px;
+    font-size: 56px;
     left: percentage(1/6);
     padding-left: 0;
     max-width: 40%;
   }
-
-  @include mq(x-large-up) {
-    font-size: 72px;
-  }
 }
 
-.c-hero__heading-title,
-.c-hero__heading-name {
+.c-hero__heading-name,
+.c-hero__heading-title {
   display: inline-block;
   opacity: 0;
   transform: translateY(110%);
@@ -125,9 +121,12 @@
   }
 }
 
+.c-hero__heading-name {
+  font-family: $light-font-family;
+}
+
 .c-hero__heading-title {
   color: $primary-color;
-  font-family: $serif-bold-font-family;
   transition-delay: $headline-delay + 0.1s;
 }
 
